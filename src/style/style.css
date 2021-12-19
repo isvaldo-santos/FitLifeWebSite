@@ -15,7 +15,7 @@
 :root {
 --text-color: #021f2a;
 --bg-color: #fff;
---bg-nav: #5ce065;
+--green: #5ce065;
 
 }
 /* Scroll customizado */
@@ -53,6 +53,10 @@ header {
     color: var(--bg-color);
 }
 
+.logo:hover {
+    color: var(--green);
+}
+
 .navbar {
     display: flex;
     gap: 5rem;
@@ -69,7 +73,7 @@ header {
         content: '';
         width: 0%;
         height: 2px;
-        background: var(--bg-color);
+        background: var(--green);
         position: absolute;
         bottom: -4px;
         left: 0;
@@ -101,3 +105,43 @@ header {
         object-fit: cover;
         object-position: center;
     }
+
+.home-text {
+    z-index: 100001;
+    padding: 0 100px;
+} 
+
+.home-text-2 {
+    z-index: 100001;
+    padding: 0 100px;
+} 
+
+.home-text span {
+    color: var(--bg-color);
+    font-weight: 400;
+}
+
+.home-text h1 {
+    color: var(--bg-color);
+    font-size: 3.4rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: .7rem 2.5rem;
+    border-radius: 5rem;
+    background: var(--green);
+    font-size: 1.3rem;
+    color: #fff;
+    cursor: pointer;
+    box-shadow:0 0.3rem 1rem rgba(0, 0, 0, .1);
+    transition: all .3s linear;
+}
+
+.btn:hover {
+    transform: scale(1.1);
+}
