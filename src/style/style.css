@@ -186,3 +186,13 @@ header {
         font-weight: 800;
         font-size: 1rem;
     }
+    .coach-icon {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        padding: 10px;
+        background: var(--text-color);
+        color: var(--bg-color);
+        font-size: 20px;
+        cursor: pointer;
+    }
