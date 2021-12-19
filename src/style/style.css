@@ -196,3 +196,16 @@ header {
         font-size: 20px;
         cursor: pointer;
     }
+    .treinadores-container .box:hover .coach-icon {
+        background: #01151d;
+    }
+
+
+.video-container {
+    display: grid;
+    place-items: center;
+    margin-top: 2rem;
+}
+    .video-container video {
+        width: 768px;
+    }
