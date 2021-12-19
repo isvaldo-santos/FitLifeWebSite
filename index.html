@@ -10,9 +10,12 @@
 
     <!-- Icones -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <!-- Swipper JS -->
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+
+
 </head>
 <body>
     <!-- Nav -->
@@ -22,8 +25,9 @@
 
         <ul class="navbar">
             <li><a href="#home" class="home-active">Home</a></li>
-            <li><a href="#planos">Planos</a></li>
+            <li><a href="#treinadores">Treinadores</a></li>
             <li><a href="#videos">Videos</a></li>
+            <li><a href="#pricing">Planos</a></li>
             <li><a href="#sobre">Sobre</a></li>
         </ul>
     </header>
@@ -66,7 +70,7 @@
     <!-- Aba dos Coachs -->
     <section class="treinadores" id="treinadores">
         <div class="cabecalho">
-            <h1>Treine com <br>os Melhores</h1>
+            <h1 style="color: var(--bg-color);">Treine com <br>os Melhores</h1>
         </div>
 
         <div class="treinadores-container">
@@ -108,9 +112,72 @@
             <h1>Treine em Qualquer <br>Lugar do Mundo</h1> 
         </div>
         <div class="video-container">
-            <video src="src/videos/video1.mp4" muted autoplay loop></video>
+            <video src="src/videos/video1.mp4" muted autoplay loop controls></video>
         </div>
     </section>
+
+    <!-- Planos -->
+     <section class="pricing" id="pricing">
+        <h1 class="cabecalho" id="cabecalho"> Conheça nossas assinaturas </h1>
+
+        <div class="box-container">
+
+            <div class="box">
+                <h3 class="titulo">Grátis</h3>
+                <div class="preco">R$0,00<span>/por mês</span></div>
+                <ul>
+                    <li> <i class="fas fa-times"></i> Sem Propagandas </li>
+                    <li> <i class="fas fa-times"></i> Acesso a Aulas Exclusivas </li>
+                    <li> <i class="fas fa-check"></i> Aulas Iniciais </li>
+                    <li> <i class="fas fa-times"></i> Acesso Ao Instagram Privado </li>
+                    <li> <i class="fas fa-times"></i> Acesso ao Whatsapp dos Coaches </li>
+                </ul>
+                <a href="#" class="btn">cadastre-se</a>
+            </div>
+
+            <div class="box">
+                <h3 class="titulo">Standard</h3>
+                <div class="preco">R$9,90<span>/por mês</span></div>
+                <ul>
+                    <li> <i class="fas fa-check"></i> Sem Propagandas </li>
+                    <li> <i class="fas fa-check"></i> Acesso a Aulas Exclusivas </li>
+                    <li> <i class="fas fa-check"></i> Aulas Iniciais </li>
+                    <li> <i class="fas fa-check"></i> Acesso ao instagram privado </li>
+                    <li> <i class="fas fa-times"></i> Acesso ao Whatsapp dos Coaches </li>
+                </ul>
+                <a href="#" class="btn">Cadastre-se</a>
+            </div>
+
+            <div class="box">
+                <h3 class="titulo">Premium</h3>
+                <div class="preco">R$14,90<span>/por mês</span></div>
+                <ul>
+                    <li> <i class="fas fa-check"></i> Sem Propagandas </li>
+                    <li> <i class="fas fa-check"></i> Acesso a Aulas Exclusivas </li>
+                    <li> <i class="fas fa-check"></i> Aulas Iniciais </li>
+                    <li> <i class="fas fa-check"></i> Acesso ao instagram privado </li>
+                    <li> <i class="fas fa-check"></i> Acesso ao Whatsapp dos Coaches </li>
+                </ul>
+                <a href="#" class="btn">Cadastre-se</a>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <!-- Sobre -->
+    <section class="sobre" id="sobre">
+        <div class="sobre-text">
+            <h1>Somos Mais Que Apaixonados <br>Pelo Que Fazemos</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing <br> elit. At quidem minus laboriosam, minima, ex possimus fugit harum ullam, exercitationem <br> voluptate. Nesciunt impedit officiis dolor minus mollitia. Nam, aliquid reprehenderit!</p>
+            <a href="#" class="btn">Saiba mais</a>
+        </div>
+        <div class="sobre-img">
+            <img src="src/images/sobre1.jpg" alt="">
+        </div>
+
+    </section> 
 
 
 
@@ -121,5 +188,7 @@
     <!-- Custom JS -->
     <script src="src/srcipts/main.js"></script>
 
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/a1d0bcb184.js" crossorigin="anonymous"></script>
 </body>
 </html>
