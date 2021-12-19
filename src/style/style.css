@@ -14,7 +14,9 @@
 /* Váriaveis */
 :root {
 --text-color: #021f2a;
---bf-color: #fff;
+--bg-color: #fff;
+--bg-nav: #5ce065;
+
 }
 /* Scroll customizado */
 html::-webkit-scrollbar {
@@ -29,4 +31,58 @@ html::-webkit-scrollbar-track {
 }
 section {
     padding: 50px 100px;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 100px;
+    transition: 0.5s;
+    background: var(--bg-nav);
+}
+
+.logo {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--bg-color);
+}
+
+.navbar {
+    display: flex;
+    gap: 5rem;
+}
+    .navbar li {
+        position: relative;
+    }
+    .navbar a {
+        font-size: 1rem;
+        font-weight: 500;
+        color: var(--bg-color);
+    }
+    .navbar a::after {
+        content: '';
+        width: 0%;
+        height: 2px;
+        background: var(--bg-color);
+        position: absolute;
+        bottom: -4px;
+        left: 0;
+        transition: 0.4s;
+    }
+    .navbar a:hover::after, .navbar .home-active::after {
+        width: 100%;
+    }
+
+    
+#menu-icon {
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 100001;
+    display: none;
 }
