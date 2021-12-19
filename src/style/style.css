@@ -152,9 +152,6 @@ header {
     color: var(--text-color)
 }
 
-.treinadores {
-    background: #212121;
-}
 
 .treinadores-container {
     display: grid;
@@ -184,6 +181,7 @@ header {
         position: absolute;
         bottom: 1rem;
         left: 1rem;
+        color: var(--bg-color);
     }
     .coach-text h2 {
         color: var(--bg-color);
@@ -216,13 +214,21 @@ header {
 
 
 .sobre {
-    background: #c3c3;
+    background: #fff;
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(17rem,auto));
     align-items: center;
     justify-content: center;
     gap: 1.5rem;
 }
+    .sobre-text h1 {
+    margin-top: 0;
+    color: var(--text-color);
+    font-size: 3.4rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    }
+
     .sobre-text p {
         font-size: 0.938rem;
         text-align: justify;
@@ -231,6 +237,10 @@ header {
     .sobre-img {
         height: 100%;
         width: 100%;
+    }
+
+    .sobre-img img {
+        height: 40rem
     }
 
 
