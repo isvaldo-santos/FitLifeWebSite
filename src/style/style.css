@@ -111,11 +111,6 @@ header {
     padding: 0 100px;
 } 
 
-.home-text-2 {
-    z-index: 100001;
-    padding: 0 100px;
-} 
-
 .home-text span {
     color: var(--bg-color);
     font-weight: 400;
@@ -145,3 +140,49 @@ header {
 .btn:hover {
     transform: scale(1.1);
 }
+
+.cabecalho {
+   text-align: center; 
+}
+
+.cabecalho h1 {
+    font-size: 1.7rem;
+    font-weight: 600;
+    text-transform: capitalize;
+    color: var(--text-color)
+}
+
+.treinadores-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(240px,auto));
+    gap: 1.5rem;
+    justify-content: center;
+    margin-top: 2rem;
+}
+    .treinadores-container .box {
+        position: relative;
+    }
+    .coach-img {
+        width: 250px;
+        height: 100%;
+        overflow: hidden;
+    }
+    .coach-img img {
+        width: 100%;
+        height: 100%;
+    }
+    .coach-img img:hover {
+        cursor: pointer;
+        transform: scale(1.1);
+        transition: 1s;
+    }
+    .coach-text {
+        position: absolute;
+        bottom: 1rem;
+        left: 1rem;
+    }
+    .coach-text h2 {
+        color: var(--bg-color);
+        font-weight: 800;
+        font-size: 1rem;
+    }
