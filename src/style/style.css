@@ -47,6 +47,11 @@ header {
 
 }
 
+header.shadow {
+    background: var(--text-color);
+    box-shadow: 0 0 4px rgb(14 55 54 / 15%);
+}
+
 .logo {
     font-size: 1rem;
     font-weight: 600;
@@ -237,10 +242,16 @@ header {
     .sobre-img {
         height: 100%;
         width: 100%;
+        overflow: hidden;
     }
 
     .sobre-img img {
-        height: 40rem
+        height: 40rem;
+    }
+
+    .sobre-img img:hover {
+        transform: scale(1.1);
+        transition: 1s;
     }
 
 
@@ -304,4 +315,48 @@ header {
 
 .pricing .box-container .box ul li .fa-times {
     color: tomato;
+}
+
+.footer {
+    background: #c8c8c8;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, auto));
+    gap: 1rem;
+    color: var(--text-color);
+}
+    .footer-box h2 {
+        font-size: 1.2rem;
+        font-weight: 600;
+        margin-bottom: 10px;
+    }
+    .footer-box p {
+        font-size: 00.938rem;
+        margin-bottom: 10px;
+    }
+
+.social {
+    display: flex;
+    align-items: center;
+}
+
+.social a {
+    font-size: size 24px;
+    color: var(--text-color);
+    margin-right: 1rem;
+}
+
+.footer-box h3 {
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.footer-box li a {
+    color: var(--text-color);
+}
+
+.copyright {
+    background: #c8c8c8;
+    padding: 20px;
+    text-align: center;
+    color: var(--text-color);
 }
