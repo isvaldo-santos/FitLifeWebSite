@@ -360,3 +360,59 @@ header.shadow {
     text-align: center;
     color: var(--text-color);
 }
+
+
+/* Responsividade */
+
+@media (max-width:991px) {
+    header{
+        padding: 18px 4%;
+    }
+    section {
+        padding: 50px 4%;
+    }
+    .home-text {
+        padding: 0 4%;
+    }
+}
+
+@media (max-width: 881px) {
+    .home-text h1 {
+        font-size: 3rem;
+    }
+    .video-container {
+        width: 568px;
+    }
+}
+
+@media (max-width: 768px) {
+    header{
+        padding: 12px 4%;
+    }
+    #menu-icon{
+        color: var(--green);
+        display: initial;
+    }
+    header.shadow #menu-icon {
+        color: var(--green);
+    }
+    header .navbar{
+        position: absolute;
+        width: 240px;
+        height: 100vh;
+        top: 100%;
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        background: var(--text-color);
+        row-gap: 1.4rem;
+        padding: 20px;
+        box-shadow: 4pc 4px 0 4px rgb(14 55 54 / 15%);
+        transition: 0.2s ease;
+        text-align: left;
+    }
+
+    .navbar a {
+        color: var(--text);
+    }
+}
