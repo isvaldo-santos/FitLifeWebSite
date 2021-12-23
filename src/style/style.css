@@ -380,10 +380,12 @@ header.shadow {
     .home-text h1 {
         font-size: 3rem;
     }
-    .video-container {
+    .video-container video{
         width: 568px;
     }
 }
+
+
 
 @media (max-width: 768px) {
     header{
@@ -401,10 +403,10 @@ header.shadow {
         width: 240px;
         height: 100vh;
         top: 100%;
-        right: 0;
+        right: -100%;
         display: flex;
         flex-direction: column;
-        background: var(--text-color);
+        background: var(--bg-color);
         row-gap: 1.4rem;
         padding: 20px;
         box-shadow: 4pc 4px 0 4px rgb(14 55 54 / 15%);
@@ -414,5 +416,44 @@ header.shadow {
 
     .navbar a {
         color: var(--text);
+    }
+    .navbar a::after {
+        display: none;
+    }
+    .navbar.active {
+        right: 0;
+    }
+    .home-text h1 {
+        font-size: 2.4rem;
+    }
+    .sobre-text p br{
+        display: contents;
+    }
+    .cabecalho h1, 
+    .sobre-text h1 {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 662px) {
+    .video-container video {
+        width: 100%;
+    }
+}
+
+
+@media (max-width: 452px) {
+    .container {
+        min-height: 554px;
+    }
+    .home-text h1 {
+        font-size: 1.7rem;
+    }
+    .container img {
+        object-position: left;
+    }
+    .cabecalho h1, 
+    .sobre-text h1 {
+        font-size: 1.2rem;
     }
 }
