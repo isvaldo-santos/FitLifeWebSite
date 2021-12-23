@@ -449,9 +449,6 @@ header.shadow {
     .home-text h1 {
         font-size: 1.7rem;
     }
-    .container img {
-        object-position: left;
-    }
     .cabecalho h1, 
     .sobre-text h1 {
         font-size: 1.2rem;
